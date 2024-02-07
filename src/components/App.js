@@ -10,13 +10,14 @@ import ForgotPassword from "./ForgotPassword";
 import UpdateProfile from "./UpdateProfile";
 
 function App() {
+  console.log("here");
   return (
     <div className="flex items-center justify-center min-h-screen">
       <div className="w-full md:max-w-screen-md lg:max-w-screen-lg">
         <Router>
           <AuthProvider>
             <Switch>
-              <PrivateRoute exact path="/" component={Dashboard} />
+              <PrivateRoute exact path="/stoic-journal" component={Dashboard} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
