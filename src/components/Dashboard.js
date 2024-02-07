@@ -8,21 +8,18 @@ import {
   Col,
   Modal,
 } from "react-bootstrap";
-import { useAuth } from "../contexts/AuthContext";
-import { Link, useHistory } from "react-router-dom";
 import CustomNavbar from "./Navbar";
-import questions from "../data/Questions";
-import NewJournal from "./New_Journal";
 import PastJournals from "./PastJournals";
+import "../styling/dashboard.css";
 
 export default function Dashboard() {
   return (
     <>
       <CustomNavbar />
-      <Container fluid="md">
+      <Container>
         <Row>
           {/* Main Content */}
-          <Col>
+          <Col className="justify-content-center mt-5">
             <PastJournals />
           </Col>
         </Row>

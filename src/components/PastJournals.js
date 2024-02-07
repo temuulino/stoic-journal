@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { database } from "../firebase";
 import { useAuth } from "../contexts/AuthContext";
 import { ref, get } from "firebase/database";
-import { Button, Col, Row, TextArea, Card } from "react-bootstrap";
+
+import { Button, Col, Row, TextArea, Card, Modal } from "react-bootstrap";
 
 const PastJournals = () => {
   const { getCurrentUserId } = useAuth();
@@ -48,9 +49,9 @@ const PastJournals = () => {
 
   return (
     <Row>
-      <Col>
+      <Col sm={2} className="text-center mt-4 mb-4">
         {pastJournals.map((journal, index) => (
-          <Card>
+          <Card className="mb-4">
             <Card.Body>
               <Button
                 type="button"
@@ -63,7 +64,7 @@ const PastJournals = () => {
           </Card>
         ))}
       </Col>
-      <Col>
+      <Col sm={8} className="text-center mt-4 mb-4 ml-4">
         {selectedDayQuestions.map((questions, index) => (
           <div className="mb-3">
             <label htmlFor="exampleFormControlTextarea1" className="form-label">
