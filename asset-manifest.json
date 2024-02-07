@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/stoic-journal/static/css/main.45f979b3.css",
-    "main.js": "/stoic-journal/static/js/main.90965b91.js",
+    "main.js": "/stoic-journal/static/js/main.14165024.js",
     "static/media/logo.svg": "/stoic-journal/static/media/logo.6d7091891073598e450de6cd5e35a682.svg",
     "index.html": "/stoic-journal/index.html",
     "main.45f979b3.css.map": "/stoic-journal/static/css/main.45f979b3.css.map",
-    "main.90965b91.js.map": "/stoic-journal/static/js/main.90965b91.js.map"
+    "main.14165024.js.map": "/stoic-journal/static/js/main.14165024.js.map"
   },
   "entrypoints": [
     "static/css/main.45f979b3.css",
-    "static/js/main.90965b91.js"
+    "static/js/main.14165024.js"
   ]
 }
