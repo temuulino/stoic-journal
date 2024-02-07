@@ -17,8 +17,7 @@ const nodemailer = require("nodemailer");
 admin.initializeApp();
 
 // Configure SendGrid
-const SENDGRID_API_KEY =
-  "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";
+const SENDGRID_API_KEY = functions.config().sendgrid.apikey;
 const transporter = nodemailer.createTransport({
   service: "SendGrid",
   auth: {
